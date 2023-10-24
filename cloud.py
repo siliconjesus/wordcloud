@@ -1,6 +1,3 @@
-import os
-
-from os import path
 from wordcloud import WordCloud
 
 filename = input("What file of text do you want to make a wordcloud?\n")
