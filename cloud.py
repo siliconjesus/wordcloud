@@ -4,7 +4,7 @@ from os import path
 from wordcloud import WordCloud
 
 d = path.dirname(__file__) if "__file__" in locals() else os.getcwd()
-file = input("What file of text do you want to make a wordcloud? ")
+file = input("What file of text do you want to make a wordcloud?\n")
 outfile = file.replace(".txt", ".png")
 
 text = open(path.join(d, file)).read()
