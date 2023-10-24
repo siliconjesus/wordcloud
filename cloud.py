@@ -28,7 +28,7 @@ from wordcloud import WordCloud
 # if "--verbose" in opts:
 #     verbose_on()
 
-filename = input("What file of text do you want to make a wordcloud?/n")
+filename = input("What file of text do you want to make a wordcloud?\n")
 outfile = filename.replace(".txt", ".png")
 
 with open(filename) as this_file:
