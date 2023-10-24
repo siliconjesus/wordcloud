@@ -9,7 +9,8 @@ outfile = file.replace(".txt", ".png")
 
 text = open(path.join(d, file)).read()
 
-wordcloud = WordCloud(random_state=1,
+wordcloud = WordCloud(width = 1600, height = 1200,
+                      random_state=1,
                       colormap='Reds',
                       collocations = False,
                       regexp = r"\w[\w' ]+").generate(text)
