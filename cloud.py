@@ -12,5 +12,5 @@ try:
 except:
     print("error opening file")
 
-wordcloud = WordCloud().generate(text)
+wordcloud = WordCloud(random_state=1, regexp=r'[a-zA-Z\/]').generate(text)
 wordcloud.to_file(outfile)
