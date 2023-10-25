@@ -34,7 +34,7 @@ outfile = filename.replace(".txt", ".png")
 with open(filename) as this_file:
     text = this_file.read()
 
-wordcloud = WordCloud(width = 1600, height = 1200,
+wordcloud = WordCloud(width = 2400, height = 1200,
                       random_state=1,
                       colormap='Reds',
                       collocations = False,
